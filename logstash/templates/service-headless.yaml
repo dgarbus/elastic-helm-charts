@@ -18,6 +18,3 @@ spec:
   ports:
   - name: http
     port: {{ .Values.httpPort }}
-{{- if .Values.extraPorts }}
-{{- toYaml .Values.extraPorts | nindent 2 }}
-{{- end }}
